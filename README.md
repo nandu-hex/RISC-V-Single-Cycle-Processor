@@ -19,13 +19,6 @@ stages. Instruction and data memories are external to the core.
 - `Single_Cycle_RISCV/rtl.sv` — complete core integration
 - `rnr-stage.yaml` — assignment CI module/source mapping
 
-## CI stage
-
-The supplied `rnr-stage.yaml` is set to `integration`, so the assignment CI
-will attempt all stages. If the course CI reports a failure, inspect its
-specific log and compare the failing module's interface and behaviour with
-the course specification. Do not mark a stage complete until it passes.
-
 ## Important architecture notes
 
 - Reset sets the PC to `0x80000000`.
